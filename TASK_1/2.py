@@ -2,8 +2,6 @@ import numpy as np
 import pandas as pd
 from statsmodels.tsa.arima.model import ARIMA
 
-# функция правдоподобия 
-
 # ARIMA модель и временной ряд data случайно сгенерированный 
 np.random.seed(0)
 data = pd.Series(np.random.randn(1000), index=pd.date_range('2022-01-01', periods=1000))
