@@ -10,7 +10,7 @@ np.random.seed(0)
 samples1 = np.random.normal(mean1, std_dev1, 1000)
 samples2 = np.random.normal(mean2, std_dev2, 1000)
 
-# Пример данных из предыдущего запроса
+
 data = np.concatenate([samples1, samples2])
 
 # Инициализация параметров
@@ -26,7 +26,7 @@ def likelihood(data, mu1, mu2, sigma1, sigma2, p):
 
 # Функция для алгоритма Метрополиса-Хастингса
 def metropolis_hastings(data, iterations):
-    samples = np.zeros((iterations, 5))  # Средние и стандартные отклонения для двух компонент + p
+    samples = np.zeros((iterations, 5))  # Средние и стандартные отклонения для двух компонентов 
     acceptance_count = 0
 
     for i in range(1, iterations):

@@ -21,9 +21,9 @@ gmm.fit(data)
 predicted_labels = gmm.predict(data)
 
 # Вывод результатов
-print("Параметры компонент смеси:")
+print("Параметры компонентов смеси:")
 for i in range(2):
-    print(f"Компонента {i+1}: Среднее = {gmm.means_[i][0]}, Стандартное отклонение = {np.sqrt(gmm.covariances_[i][0][0])}")
+    print(f"Компонент {i+1}: Среднее = {gmm.means_[i][0]}, Стандартное отклонение = {np.sqrt(gmm.covariances_[i][0][0])}")
 
 # Вывод кластеров
 print("\n Предсказанные кластеры (0 и 1):")
